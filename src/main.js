@@ -1,9 +1,9 @@
 const ROBOFLOW_SETTINGS = {
-    publishable_key: "rf_5w20VzQObTXjJhTjq6kad9ubrm33", // grab from your account settings (you can use it to restrict access to your model)
+    publishable_key: "rf_tOEeOsujYFcEZJwyJG1SfKW0o0M2", // grab from your account settings (you can use it to restrict access to your model)
 
-    model: "aerial-solar-panels",   // change to detect something other than solar panels (find other models at https://universe.roboflow.com/browse/aerial)
+    model: "datascience_droneflag_2",   // change to detect something other than solar panels (find other models at https://universe.roboflow.com/browse/aerial)
                                     // or train your own at https://app.roboflow.com
-    version: 5, // use the version of your model with the best results
+    version: 1, // use the version of your model with the best results
 
     threshold: 0.6, // adjust the confidence threshold upwards if you're getting false positives, downwards if it's missing predictions
     overlap: 0.5 // how much predictions can overlap each other; not too important here since we combine nearby predictions into a single marker
